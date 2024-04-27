@@ -1,0 +1,141 @@
+.PostShare {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    /* Adjust alignment */
+    gap: 12px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.postHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.postHeader img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    /* Increase margin for better spacing */
+    transition: transform 0.3s ease;
+    /* Add transition for smooth hover effect */
+}
+
+.PostShare img:hover {
+    /* transform: scale(1.1); */
+    /* Add slight scale effect on hover */
+}
+
+.PostShare input[type="text"] {
+    flex: 1 1;
+    padding: 18px;
+    border: none;
+    border-radius: 17px;
+    font-size: 16px;
+    background: #F0F2F5;
+    outline: none;
+    margin-right: 20px;
+    /* Add margin for spacing */
+}
+
+.postOptions {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 4px;
+}
+
+.option {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.option svg {
+    margin-right: 5px;
+}
+
+.option:hover {
+    transform: translateY(-3px);
+    /* Add slight vertical lift effect on hover */
+}
+
+.previewImage {
+    position: relative;
+    margin-top: 20px;
+    /* Increase margin for spacing */
+}
+
+.previewImage img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    /* Adjust margin for spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add subtle box shadow */
+}
+
+
+.previewImage svg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    /* Add transition for hover effect */
+}
+
+.previewImage svg:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken background color on hover */
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--primary-color-hover);
+}
+
+@media (max-width: 768px) {
+    .PostShare {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .PostShare img {
+        margin-right: 0;
+        margin-bottom: 20px;
+        /* Increase margin for spacing */
+    }
+
+    .postOptions {
+        flex-direction: column;
+    }
+
+    .option {
+        margin-right: 0;
+        margin-bottom: 20px;
+        /* Increase margin for spacing */
+    }
+}

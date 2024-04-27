@@ -1,0 +1,39 @@
+.Post {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--cardColor);
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.profileHeader {
+    display: flex;
+    gap: 12px;
+    align-content: space-around;
+    align-items: center;
+}
+
+.profilename {
+    font-weight: 600;
+}
+
+
+
+.postImage {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.userimage {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.postReact {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
